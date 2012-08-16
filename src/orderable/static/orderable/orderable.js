@@ -73,7 +73,7 @@
                 }
                 // Stacked Inlines
                 else {
-                    inline.find('.form-row.order').hide();
+                    inline.find('.form-row.order, .form-row.field-order').hide();
                     inline.find('.inline-group h3').css('cursor', 'move');
                     
                     inline.find('.inline-group').sortable({
