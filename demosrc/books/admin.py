@@ -1,5 +1,6 @@
 from django.contrib import admin
-from orderable.admin import OrderableStackedInline, OrderableTabularInline
+from orderable.admin import (OrderableAdmin, OrderableStackedInline,
+    OrderableTabularInline)
 from books.models import Book, Chapter, Review
 
 class ChapterInlineAdmin(OrderableTabularInline):
@@ -17,10 +18,9 @@ class ReviewInlineAdmin(OrderableStackedInline):
     )
 
 
-class BookAdmin(admin.ModelAdmin):
+class BookAdmin(OrderableAdmin):
     list_display = ('title', 'author', 'pages')
     model = Book
     inlines = [ChapterInlineAdmin, ReviewInlineAdmin]
 
 admin.site.register(Book, BookAdmin)
-

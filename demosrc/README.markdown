@@ -25,7 +25,7 @@ re-open it (so PATH picks up the correct `django-admin.py`).
 Then:
 
 ```shell
-django-admin.py syncdb
+django-admin.py syncdb --noinput
 django-admin.py runserver
 ```
 

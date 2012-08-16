@@ -3,9 +3,20 @@
     "pk": 1, 
     "model": "books.book", 
     "fields": {
-      "author": "John Doe", 
       "pages": 42, 
+      "author": "John Doe", 
+      "order": 1, 
       "title": "An Book"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "books.book", 
+    "fields": {
+      "pages": 99, 
+      "author": "Derp Masterson", 
+      "order": 2, 
+      "title": "Another Book"
     }
   }, 
   {
@@ -18,12 +29,30 @@
     }
   }, 
   {
+    "pk": 5, 
+    "model": "books.chapter", 
+    "fields": {
+      "book": 2, 
+      "order": 1, 
+      "title": "1: Lorem Ipsum"
+    }
+  }, 
+  {
     "pk": 3, 
     "model": "books.chapter", 
     "fields": {
       "book": 1, 
       "order": 2, 
       "title": "And The Second"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "books.chapter", 
+    "fields": {
+      "book": 2, 
+      "order": 2, 
+      "title": "2: Sit Amet"
     }
   }, 
   {
@@ -63,6 +92,26 @@
       "review": "In hac habitasse platea dictumst. Nulla erat enim, fringilla rutrum mattis non, laoreet blandit massa. Morbi porta rhoncus mattis. Nam imperdiet bibendum ipsum ut accumsan. Mauris in massa arcu, vel mattis lacus. Ut cursus lobortis bibendum. Suspendisse a quam in lectus condimentum sagittis non at ipsum.", 
       "book": 1, 
       "order": 3
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "books.review", 
+    "fields": {
+      "rating": 0, 
+      "review": "Nam adipiscing erat ut lacus dapibus facilisis imperdiet metus porttitor. Morbi tempor, leo rutrum semper laoreet, lacus orci convallis mi, ut blandit enim arcu sed ante.", 
+      "book": 2, 
+      "order": 4
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "books.review", 
+    "fields": {
+      "rating": 10, 
+      "review": "Duis sed massa arcu, at venenatis magna. Nunc aliquet enim vitae quam porttitor eget placerat dolor congue. Ut elementum justo sed purus pharetra elementum. ", 
+      "book": 2, 
+      "order": 5
     }
   }
 ]

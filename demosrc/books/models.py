@@ -3,7 +3,7 @@ from orderable.models import BaseOrderableModel, OrderableModel
 from django.template.defaultfilters import truncatewords
 
 
-class Book(models.Model):
+class Book(OrderableModel):
     title = models.CharField(max_length=255)
     author = models.CharField(max_length=255)
     pages = models.PositiveIntegerField()
