@@ -1,0 +1,68 @@
+[
+  {
+    "pk": 1, 
+    "model": "books.book", 
+    "fields": {
+      "author": "John Doe", 
+      "pages": 42, 
+      "title": "An Book"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "books.chapter", 
+    "fields": {
+      "book": 1, 
+      "order": 1, 
+      "title": "The First"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "books.chapter", 
+    "fields": {
+      "book": 1, 
+      "order": 2, 
+      "title": "And The Second"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "books.chapter", 
+    "fields": {
+      "book": 1, 
+      "order": 3, 
+      "title": "Chapter The Third"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "books.review", 
+    "fields": {
+      "rating": 100, 
+      "review": "Cras erat nunc, semper id pulvinar non, pharetra id velit. Mauris non tortor vitae ante tempor aliquam. Donec nec ligula varius dolor tempor pretium. Fusce est ligula, mollis at egestas ac, varius nec mauris. Nam elementum, urna nec pulvinar elementum, erat nisl vestibulum justo, at condimentum mauris elit eget ante.", 
+      "book": 1, 
+      "order": 1
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "books.review", 
+    "fields": {
+      "rating": 0, 
+      "review": "Fusce commodo lacus et arcu ullamcorper nec iaculis neque ultrices. Sed luctus porttitor ultricies. Morbi et lorem eu est adipiscing dapibus vel sed eros. Donec porttitor orci eu velit convallis at ultricies quam elementum. Nulla bibendum consequat tortor quis pretium. Ut rutrum rutrum dolor at ultricies. Mauris eu magna quis enim pharetra ullamcorper sit amet placerat purus", 
+      "book": 1, 
+      "order": 2
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "books.review", 
+    "fields": {
+      "rating": 75, 
+      "review": "In hac habitasse platea dictumst. Nulla erat enim, fringilla rutrum mattis non, laoreet blandit massa. Morbi porta rhoncus mattis. Nam imperdiet bibendum ipsum ut accumsan. Mauris in massa arcu, vel mattis lacus. Ut cursus lobortis bibendum. Suspendisse a quam in lectus condimentum sagittis non at ipsum.", 
+      "book": 1, 
+      "order": 3
+    }
+  }
+]
